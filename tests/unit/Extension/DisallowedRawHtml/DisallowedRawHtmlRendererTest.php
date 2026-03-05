@@ -72,7 +72,7 @@ final class DisallowedRawHtmlRendererTest extends TestCase
         yield ['<plaintext>', '&lt;plaintext>'];
 
         // Newline/whitespace bypass attempts (security fix)
-        yield ["<script   >", "&lt;script   >"];
+        yield ['<script   >', '&lt;script   >'];
         yield ["<script\n>", "&lt;script\n>"];
         yield ["<script\t>", "&lt;script\t>"];
         yield ["<script\r\n>", "&lt;script\r\n>"];
@@ -118,7 +118,7 @@ final class DisallowedRawHtmlRendererTest extends TestCase
         yield ['<strong />', '&lt;strong />'];
 
         // Newline bypass with custom config
-        yield ["<strong   >", "&lt;strong   >"];
+        yield ['<strong   >', '&lt;strong   >'];
         yield ["<strong\n>", "&lt;strong\n>"];
         yield ["<strong\t>", "&lt;strong\t>"];
 
