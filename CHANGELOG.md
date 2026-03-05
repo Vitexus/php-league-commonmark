@@ -12,6 +12,7 @@ This is a **security release** to address an issue where `DisallowedRawHtml` can
 
 ### Fixed
 - Fixed `DisallowedRawHtmlRenderer` not blocking raw HTML tags with trailing ASCII whitespace (GHSA-4v6x-c7xx-hw9f)
+- Fixed PHP 8.5 deprecation (#1107)
 
 ## [2.8.0] - 2025-11-26
 
