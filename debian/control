@@ -1,0 +1,21 @@
+Source: php-league-commonmark
+Section: php
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends: debhelper-compat (= 13), jq
+Standards-Version: 4.6.2
+Homepage: https://commonmark.thephpleague.com
+Vcs-Git: https://github.com/Vitexus/php-league-commonmark.git
+Rules-Requires-Root: no
+
+Package: php-league-commonmark
+Architecture: all
+Depends: ${misc:Depends}, php-cli | php, php-mbstring,
+ php-league-config (>= 1.1.1), php-psr-event-dispatcher,
+ php-symfony-deprecation-contracts, php-symfony-polyfill-php80
+Description: Highly-extensible PHP Markdown parser supporting CommonMark and GFM
+ A PHP Markdown parser which fully supports the CommonMark spec and
+ GitHub-Flavored Markdown (GFM). Built on a highly extensible architecture
+ that allows users to add custom syntax, renderers, and processors.
+ Suitable for rendering Markdown in web applications, documentation tools,
+ and other use cases requiring standards-compliant Markdown parsing.
